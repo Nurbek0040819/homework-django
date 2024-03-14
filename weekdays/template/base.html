@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh sahifa</title>
+    {% block title %}
+    	Month 
+    {% endblock %}
+</head>
+<body>
+    <ul>
+        <li><a href="{% url 'month_list' %}">Month</a></li>
+        <li><a href="{% url 'themes' %}">themes</a></li>
+    </ul>
+    {% block content %}
+    	
+    {% endblock %}
+</body>
+</html>

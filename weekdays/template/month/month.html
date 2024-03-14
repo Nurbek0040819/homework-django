@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Month
+{% endblock %}
+
+{% block content %}
+    <h1>Month</h1>
+    <ul>
+	{% for oy in oylar %}
+        <li>{{ oy }}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}

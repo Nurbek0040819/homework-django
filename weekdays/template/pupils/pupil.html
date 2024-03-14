@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Pupils
+{% endblock %}
+
+{% block content %}
+    <h1>O'quvchilar ro'yxati</h1>
+    <ul>
+	{% for pupil in pupils %}
+        <li>{{ pupil }}</li>
+    {% endfor %}
+    </ul>
+    <ul>
+	{% for baho in baholar %}
+        <li>Baholari: {{ baho }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
